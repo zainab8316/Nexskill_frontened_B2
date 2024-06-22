@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let noitems = prompt("Enter the number of product")
+    let items = []
+    for(i = 0 ; i<noitems  ;i++){
+         zainab = prompt("Name of product ");
+        items.push(zainab);
+        console.log(zainab, "Products");
+    }
+
+    let elem = prompt("you want to find ")
+    function fifndelem (items,elem){
+        for (i = 0; i < items.length;i++){
+            if (elem == items[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+    let result = fifndelem(items,elem);
+    console.log(result);
+    for (let i = 0; i < items.length; i++){
+        console.log(items[i]);
+    }
+</script>
+   
+    
+</body>
+</html>
